@@ -279,7 +279,7 @@ Zed supports both built-in and external formatters. Configure formatters globall
 }
 ```
 
-This example uses Prettier for JavaScript and the language server's formatter for Rust, both set to format on save.
+This example uses Prettier for JavaScript and the language server's formatter for Rust, both set to format on save. Formatters should read source code from standard input and return the formatted source code on standard output. They should not read or write files directly.
 
 To disable formatting for a specific language:
 
